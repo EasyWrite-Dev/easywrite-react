@@ -1,12 +1,12 @@
 import axios from "axios";
 import { toast } from "sonner";
 
-// export const baseURL =
-//   process.env.NODE_ENV == "development"
-//     ? "http://localhost:3333"
-//     : "https://surajondev-adonis.onrender.com";
+export const baseURL =
+  process.env.NODE_ENV == "development"
+    ? "http://localhost:3000"
+    : "https://surajondev-adonis.onrender.com";
 
-export const baseURL = "https://surajondev-adonis.onrender.com";
+// export const baseURL = "https://surajondev-adonis.onrender.com";
 
 export const axiosInstance = axios.create({
   baseURL,
@@ -27,7 +27,7 @@ axiosInstance.interceptors.request.use(
   },
   (error: any) => {
     return Promise.reject(error);
-  }
+  },
 );
 
 axiosInstance.interceptors.request.use(
@@ -44,15 +44,12 @@ axiosInstance.interceptors.request.use(
   },
   (error) => {
     return Promise.reject(error);
-  }
+  },
 );
 
 axiosInstance.interceptors.response.use(
   (response) => {
-    if (response.status === 200) {
-      return response;
-    }
-    return Promise.reject(response);
+    return response;
   },
   (error) => {
     const { response } = error;
@@ -67,27 +64,24 @@ axiosInstance.interceptors.response.use(
       //   description: response?.data?.errors || "Error occurred",
       // });
       const flattenErrors = (errors: any) => {
-        return Object.entries(errors)
-          .map(([key, value]) => {
-            if (Array.isArray(value)) {
-              return value
-                .map((errorObj) =>
-                  Object.entries(errorObj)
-                    .map(([field, message]) => message)
-                    .join(", ")
-                )
-                .join(", ");
+        if (!errors) return null;
+        return Object.keys(errors)
+          .map((key) => {
+            const messages = errors[key];
+            if (Array.isArray(messages)) {
+              return `${key.charAt(0).toUpperCase() + key.slice(1)} ${messages.join(", ")}`;
             }
-            return value;
+            return null;
           })
-          .join(", ");
+          .filter(Boolean)
+          .join("; ");
       };
       toast.error(
         response?.data?.message ||
-          flattenErrors(response?.data?.errors) ||
-          "Error occurred"
+          flattenErrors(response?.data) ||
+          "Error occurred",
       );
     }
     return Promise.reject(error);
-  }
+  },
 );

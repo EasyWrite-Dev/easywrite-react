@@ -67,7 +67,7 @@ async function getArticleData(slug: string): Promise<ArticleData | null> {
 async function getAllArticlesForStaticGen(): Promise<{ slug: string }[] | []> {
   try {
     const axiosInstance = getServerAxiosInstance();
-    const response = await axiosInstance.get(`${baseURL}/articles`);
+    const response = await axiosInstance.get(`${baseURL}/easywrite_articles`);
     return response.data; // e.g., [{ slug: "my-first-post" }, { slug: "another-post" }]
   } catch (error) {
     console.error("Error fetching article list for static generation:", error);

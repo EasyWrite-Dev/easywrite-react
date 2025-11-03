@@ -52,7 +52,7 @@ const Faq = () => {
               key={i}
               className="border-none"
             >
-              <AccordionTrigger className="text-lg font-medium text-gray-800 hover:no-underline cursor-pointer">
+              <AccordionTrigger className="text-lg text-left font-medium text-gray-800 hover:no-underline cursor-pointer">
                 {faq?.question}
               </AccordionTrigger>
               <AccordionContent className="text-base text-gray-600 w-full md:w-[80vw]">

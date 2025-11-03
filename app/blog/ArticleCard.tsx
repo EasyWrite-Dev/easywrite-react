@@ -40,10 +40,10 @@ const ArticleCard = ({
                 {title}
               </p>
               <p className="font-raleway whitespace-nowrap">
-                {format(new Date(date), "dd MMM, yyyy")}
+                {format(new Date(date || new Date()), "dd MMM, yyyy")}
               </p>
               <div className="flex flex-wrap">
-                {tag.map((item) => (
+                {tag?.map((item) => (
                   <span
                     className="font-raleway underline mr-2 decoration-[#104127] decoration-2"
                     key={item}
