@@ -44,7 +44,7 @@ const marked = new Marked(
       const language = hljs.getLanguage(lang) ? lang : "plaintext";
       return hljs.highlight(code, { language }).value;
     },
-  })
+  }),
 );
 
 // This function now runs at BUILD TIME for each slug
@@ -52,7 +52,7 @@ async function getArticleData(slug: string): Promise<ArticleData | null> {
   try {
     const axiosInstance = getServerAxiosInstance();
     const response = await axiosInstance.get(
-      `${baseURL}/articles/slug/${slug}`
+      `${baseURL}/easywrite_articles/${slug}`,
     );
     return response.data;
   } catch (error) {
