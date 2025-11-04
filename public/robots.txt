@@ -29,4 +29,4 @@ Allow: /
 # ===================================================================
 # Location of the sitemap
 # ===================================================================
-Sitemap: https://www.surajon.dev/sitemap.xml
+Sitemap: https://www.easywrite.dev/sitemap.xml
