@@ -12,7 +12,7 @@ const PrivacyPolicy = () => {
             <section>
               <h2 className="text-2xl font-semibold mb-2">1. Introduction</h2>
               <p>
-                This Privacy Policy describes how EasyWrite.dev ("we", "us", or
+                This Privacy Policy describes how Texavor.dev ("we", "us", or
                 "our") collects, uses, and discloses your information. By using
                 our service, you agree to the collection and use of information
                 in accordance with this policy.

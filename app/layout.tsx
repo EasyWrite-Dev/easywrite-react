@@ -18,21 +18,21 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "EasyWrite - Authority for you blog",
+  title: "Texavor - Authority for you blog",
   description:
     "AI developer content strategist. Generate high-impact, E-E-A-T-optimized technical article ideas for Google & AI Chatbots. Maximize discovery & authority.",
   verification: {
-    google: "WHjrUK7V1Y8n5aQ0gmeOk06LmzeSsadLBul9X_sQgTU",
+    google: "E4iB-NQGsBin8Lyn7z9uYrmUZR0YwVl4_FhB4bWaKzo",
   },
   openGraph: {
-    title: "EasyWrite - Authority for you blog",
+    title: "Texavor - Authority for you blog",
     description:
       "AI developer content strategist. Generate high-impact, E-E-A-T-optimized technical article ideas for Google & AI Chatbots. Maximize discovery & authority.",
     images: "/easywriteOpenGraph.png",
   },
   twitter: {
     card: "summary_large_image",
-    title: "EasyWrite - Authority for you blog",
+    title: "Texavor - Authority for you blog",
     description:
       "AI developer content strategist. Generate high-impact, E-E-A-T-optimized technical article ideas for Google & AI Chatbots. Maximize discovery & authority.",
     images: "/easywriteOpenGraph.png",
@@ -58,7 +58,7 @@ export default function RootLayout({
       </body>
       <Script
         src="https://cloud.umami.is/script.js"
-        data-website-id="c1a4ed5c-37ee-4742-9432-13a5cffedf7d"
+        data-website-id="cd47a42b-95db-4fae-a72e-1b6737411074"
         strategy="afterInteractive"
       />
     </html>

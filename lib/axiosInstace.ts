@@ -27,7 +27,7 @@ axiosInstance.interceptors.request.use(
   },
   (error: any) => {
     return Promise.reject(error);
-  },
+  }
 );
 
 axiosInstance.interceptors.request.use(
@@ -44,7 +44,7 @@ axiosInstance.interceptors.request.use(
   },
   (error) => {
     return Promise.reject(error);
-  },
+  }
 );
 
 axiosInstance.interceptors.response.use(
@@ -69,7 +69,9 @@ axiosInstance.interceptors.response.use(
           .map((key) => {
             const messages = errors[key];
             if (Array.isArray(messages)) {
-              return `${key.charAt(0).toUpperCase() + key.slice(1)} ${messages.join(", ")}`;
+              return `${
+                key.charAt(0).toUpperCase() + key.slice(1)
+              } ${messages.join(", ")}`;
             }
             return null;
           })
@@ -79,9 +81,9 @@ axiosInstance.interceptors.response.use(
       toast.error(
         response?.data?.message ||
           flattenErrors(response?.data) ||
-          "Error occurred",
+          "Error occurred"
       );
     }
     return Promise.reject(error);
-  },
+  }
 );

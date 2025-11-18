@@ -14,16 +14,16 @@ import {
 
 const Chart = () => {
   const [chartData, setChartDate] = useState<any>([
-    { month: "January", easywrite: 10, alone: 10 },
-    { month: "February", easywrite: 15, alone: 12 },
-    { month: "March", easywrite: 20, alone: 14 },
-    { month: "April", easywrite: 25, alone: 16 },
-    { month: "May", easywrite: 40, alone: 20 },
-    { month: "June", easywrite: 50, alone: 25 },
+    { month: "January", texavor: 10, alone: 10 },
+    { month: "February", texavor: 15, alone: 12 },
+    { month: "March", texavor: 20, alone: 14 },
+    { month: "April", texavor: 25, alone: 16 },
+    { month: "May", texavor: 40, alone: 20 },
+    { month: "June", texavor: 50, alone: 25 },
   ]);
   const chartConfig = {
-    easywrite: {
-      lable: "EasyWrite",
+    texavor: {
+      lable: "Texavor",
       color: "#104127",
     },
     alone: {
@@ -70,7 +70,7 @@ const Chart = () => {
             <div className="flex items-center gap-4">
               <div className="h-1 bg-[#104127] rounded-full w-10" />
               <p className="text-black font-base font-normal text-base">
-                With EasyWrite
+                With Texavor
               </p>
             </div>
             <div className="flex items-center gap-4">
@@ -113,9 +113,9 @@ const Chart = () => {
               />
             </ReferenceDot>
             <Line
-              dataKey="easywrite"
+              dataKey="texavor"
               type="natural"
-              stroke="var(--color-easywrite)"
+              stroke="var(--color-texavor)"
               strokeWidth={4}
               dot={false}
             />

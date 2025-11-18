@@ -52,7 +52,7 @@ export default async function ArticleListPage() {
     <PageTransition>
       <div className="w-full md:max-w-[1200px] mx-auto py-2 px-4">
         <h1 className="font-raleway text-[32px] font-medium">
-          Stories by EasyWrite
+          Stories by Texavor
         </h1>
         <div className="md:block hidden">
           {articleData?.length === 0 ? (

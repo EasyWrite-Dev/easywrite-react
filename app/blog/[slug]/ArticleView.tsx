@@ -201,7 +201,7 @@ export function ArticleView({ articleData, html }: ArticleViewProps) {
               <div className="bg-[#EEDED3] p-4 rounded-2xl border-none shadow-sm">
                 {" "}
                 <h2 className="font-raleway text-lg font-semibold text-gray-800 mb-4">
-                  EasyWrite
+                  Texavor
                 </h2>
                 <Link
                   href="/"
@@ -210,7 +210,7 @@ export function ArticleView({ articleData, html }: ArticleViewProps) {
                 >
                   <Image
                     src="/article_easywrite.png"
-                    alt="EasyWrite"
+                    alt="Texavor"
                     width={260}
                     height={260}
                     className="w-full h-auto shadow-sm object-cover mb-4 rounded-2xl"

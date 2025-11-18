@@ -12,7 +12,7 @@ const TermsAndConditions = () => {
             <section>
               <h2 className="text-2xl font-semibold mb-2">1. Introduction</h2>
               <p>
-                Welcome to EasyWrite.dev! These Terms and Conditions govern your
+                Welcome to Texavor.dev! These Terms and Conditions govern your
                 use of our website and services. By accessing or using our
                 service, you agree to be bound by these terms. If you disagree
                 with any part of the terms, you may not access the service.
@@ -22,7 +22,7 @@ const TermsAndConditions = () => {
             <section>
               <h2 className="text-2xl font-semibold mb-2">2. Services</h2>
               <p>
-                EasyWrite.dev is an AI content strategist for developers. We
+                Texavor.dev is an AI content strategist for developers. We
                 provide tools to help you generate high-impact article ideas,
                 create strategic outlines, and analyze your content for
                 performance and gaps. Our goal is to help you create technical
@@ -94,7 +94,7 @@ const TermsAndConditions = () => {
                 Our service is provided "as is" and "as available" without any
                 warranties. We do not guarantee that the service will be
                 error-free or that the results of using the service will meet
-                your requirements. In no event shall EasyWrite.dev be liable for
+                your requirements. In no event shall Texavor.dev be liable for
                 any indirect, incidental, special, consequential or punitive
                 damages.
               </p>
